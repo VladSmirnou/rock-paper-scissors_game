@@ -6,7 +6,7 @@ from .constants import DSN
 # if I'll need to use it like this in the future. Because of that
 # this is the most basic configuration that was made just to 'make it work'.
 # I have no idea how to create, manage and move those connectors and cursors
-# properly, and, what's the most important, idk if need to know :P
+# properly, and, what's the most important, idk if I need to know :P
 
 conn = psycopg2.connect(dsn=DSN)
 
