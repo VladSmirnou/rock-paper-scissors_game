@@ -318,7 +318,7 @@ class GameCache(Cache):
         self.set_prev_round_choices(user_input, computer_choice)
 
         choices: tuple = (user_input, computer_choice)
-        match(choices):
+        match choices:
             case choices if user_input == computer_choice:
                 self.__round_stats['total_draws'] += 1
             case (
