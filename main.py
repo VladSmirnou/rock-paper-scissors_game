@@ -45,7 +45,7 @@ while True:
         """Because there is no labeled loop concept in Python
         I need to put this logic into the function body.
 
-        # Writing those stupid docstrings is so annoying I swear to god.
+        # Writing those stupid docstrings is so annoying I swear to God.
         """
         while True:
 
