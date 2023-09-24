@@ -1,4 +1,5 @@
 import psycopg2
+
 from .constants import DSN
 
 # I've never worked with psycopg2 directly, and I don't know
