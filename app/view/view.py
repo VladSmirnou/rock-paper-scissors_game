@@ -1,4 +1,5 @@
 from abc import ABC, abstractmethod
+
 from .enums import GameIdMessage as GIM
 from ..model.custom_dtypes import SavedGames
 
