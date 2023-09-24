@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  app:
+    container_name: rpsapp
+    build: .
+    depends_on:
+      postgres-serv:
+        condition: service_healthy
+
+  postgres-serv:
+    image: postgres:latest
+    container_name: rpsdb
+    environment: 
+      POSTGRES_PASSWORD: 'mysecretpassword'
+      POSTGRES_DB: 'applicationdb'
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 10s
+      retries: 5
+    volumes:
+      - postgres-volume-rpsapp:/var/lib/postgresql/data
+
+volumes:
+  postgres-volume-rpsapp:

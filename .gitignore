@@ -1,0 +1,10 @@
+.venv
+.mypy_cache
+.pytest_cache
+*\__pycache__
+.pdbrc
+.pylintrc
+asd.py
+do.txt
+app/tests
+.dockerignore
